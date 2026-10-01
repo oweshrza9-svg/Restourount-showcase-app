@@ -1,0 +1,43 @@
+
+body{
+     margin: 0;
+     padding: 0;
+     font-family: 'DM Sans', sans-serif;
+     background-color: #FEFEFE
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+} 
+
+section{
+    background-color: #F7F4EF;
+}
+
+.nav-par{
+    display: flex;
+    justify-content: center;
+    margin:18pxpx 0 0 0 ;
+}
+
+.navigation-bar {
+     display: flex;
+     gap: 5rem;
+     padding:9px 14px;
+}
+
+.navigation-bar li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.book{
+    color: #F7F4EF;
+    background-color: #D0783F;
+    padding: 9px 14px;
+    border-radius: 20px ;
+}
