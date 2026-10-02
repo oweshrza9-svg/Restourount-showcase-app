@@ -481,3 +481,13 @@ h6 {
     border-radius: 15px;
   
 }
+
+.menujs{
+      display: flex;
+
+}
+.menu-first{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* spacing between items */
+}

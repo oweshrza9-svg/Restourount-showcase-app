@@ -1,6 +1,7 @@
 import { heroDishes } from './data.js'
 
 const heroDiv = document.getElementById('hero-div')
+const menumain = document.getElementById('menu-main')
 
 const  createHerodiv = (data) => {
 
@@ -55,4 +56,49 @@ const  createHerodiv = (data) => {
     `
 }
 
-heroDiv.innerHTML = createHerodiv(heroDishes[0])
+heroDiv.innerHTML = createHerodiv(heroDishes[7])
+
+const menuRender = (menu) =>{
+   
+       
+    const {
+        id,
+        name,
+        category,
+        price,
+        rating,
+        description,
+        image,
+        tags,
+        spicy
+    } = menu
+
+    return `
+              <div class = "menujs">
+                
+                 <img src="${image}"
+                       alt="menu img"
+                       class="menu-imgjs"
+                 >
+
+                 <div class = "menujs-text">
+                           <h2 class="menu-name">${name}</h2>
+                           <p class = "menu-des">${description}</p>
+                           <h5 class="menu-rating">${rating}</h5>
+                 </div>
+                  
+                 <div class ="menu-buttons">
+                           <h4 class="menu-price">$${price}
+                            <button class = "menu-button"> Add </button>
+                   
+                 
+                 </div>
+              
+              
+              
+              </div>
+        
+    `
+
+}
+menumain.innerHTML = heroDishes.map(menuRender).join('')
