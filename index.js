@@ -84,7 +84,7 @@ const menuRender = (menu) =>{
                  <div class = "menujs-text">
                            <h2 class="menu-name">${name}</h2>
                            <p class = "menu-des">${description}</p>
-                           <h5 class="menu-rating">${rating}</h5>
+                           <h5 class="menu-rating">⭐${rating}</h5>
                  </div>
                   
                  <div class ="menu-buttons">
