@@ -484,10 +484,24 @@ section{
   
 }
 
+/* the menu section */
+.menu-heading{
+    margin:auto;
+    text-align: center;
+    font-family: cursive;
+    color:#6f6a61;
+}
+.menu-dess{
+    margin:auto;
+    text-align: center;
+    color:#d0783f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 .menujs{
       display: flex;
        border: 1px  #6f6a61;
-   
+    flex: 0 0 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -502,11 +516,17 @@ section{
     border-radius: 15px;
   
 }
-
+#menu{
+      overflow:hidden;
+      display: flex;
+      padding: 20px;
+}
 #menu-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;
+     transition: transform 0.5s ease;
+
+  
 }
 
 .menu-first{

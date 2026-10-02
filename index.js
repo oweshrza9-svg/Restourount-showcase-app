@@ -3,6 +3,35 @@ import { heroDishes } from './data.js'
 const heroDiv = document.getElementById('hero-div')
 const menumain = document.getElementById('menu-main')
 
+const moveAmount = 270 ;
+const menuTrack = document.getElementById('menu-main')
+let currentIndex = 0;
+const leftButton = document.getElementById('left-menuu');
+const rightButton = document.getElementById('right-menuu');
+
+
+leftButton.addEventListener('click', () => {
+
+    if (currentIndex > 0) {
+        currentIndex -= 1;
+
+        menuTrack.style.transform =
+            `translateX(-${currentIndex * moveAmount}px)`;
+    }
+
+})
+rightButton.addEventListener('click', () => {
+
+    if (currentIndex < heroDishes.length - 4) {
+        currentIndex += 1;
+
+        menuTrack.style.transform =
+            `translateX(-${currentIndex * moveAmount}px)`;
+    }
+
+})
+
+
 const  createHerodiv = (data) => {
 
     const {
