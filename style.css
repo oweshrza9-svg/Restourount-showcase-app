@@ -545,7 +545,35 @@ section{
 }
 .menu-rating{
      Display: flex;
-     font-family: 'DM Sans', sans-serif;
+     font-family:Arial, Helvetica, sans-serif;
      margin-right: 200px;
 }
 
+.menu-buttons{
+    display: flex;
+   
+}
+.menu-price{
+     color: #d0783f; 
+}
+
+.menu-button{
+    padding: 12px 50px;
+
+    border: none;
+    border-radius: 5px;
+    margin-left: 80px;
+    background-color:#d0783f;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+.menu-button:hover {
+    transform: translateY(-2px);
+    background-color: #b96532;
+}
