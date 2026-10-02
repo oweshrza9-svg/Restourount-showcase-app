@@ -22,7 +22,7 @@ leftButton.addEventListener('click', () => {
 })
 rightButton.addEventListener('click', () => {
 
-    if (currentIndex < heroDishes.length - 4) {
+    if (currentIndex < heroDishes.length - 1) {
         currentIndex += 1;
 
         menuTrack.style.transform =
