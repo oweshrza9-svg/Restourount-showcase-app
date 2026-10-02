@@ -469,8 +469,15 @@ h6 {
 
 .feature-mid p {
     margin: 0;
-
     color: #6f6a61;
-
     font-size: 13px;
+   transition:
+          transform 0.25s ease,
+        background-color 0.25s ease;
+}
+.feature-mid:hover{
+     transform: translateY(-3px);
+    background-color:#f7f2ea;
+    border-radius: 15px;
+  
 }
