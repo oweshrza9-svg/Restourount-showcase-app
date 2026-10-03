@@ -11,11 +11,6 @@ body {
     color: #25251d;
 }
 
-
-/* =========================
-   TYPOGRAPHY
-========================= */
-
 h1,
 h2,
 h3,
@@ -29,20 +24,11 @@ section{
     background-color: #F7F4EF;
 }
 
-/* =========================
-   HERO
-========================= */
-
 .hero {
     min-height: 100vh;
     padding-top: 18px;
     background-color: #fffcf8;
 }
-
-
-/* =========================
-   NAVBAR
-========================= */
 
 .nav-par {
     display: flex;
@@ -59,11 +45,6 @@ section{
     list-style: none;
 }
 
-
-/* =========================
-   NAV LINKS
-========================= */
-
 .navigation-bar li {
     list-style: none;
 }
@@ -78,11 +59,6 @@ section{
     color: #d0783f;
      transform: translateY(-2px);
 }
-
-
-/* =========================
-   BOOK TABLE BUTTON
-========================= */
 
 .book {
     padding: 9px 18px;
@@ -102,7 +78,7 @@ section{
 
 .img-apito{
     width: 170px;
-    
+
 }
 .hero-div{
     position: relative;
@@ -115,21 +91,11 @@ section{
     overflow: hidden;
 }
 
-
-/* =========================
-   HERO WRAPPER
-========================= */
-
 #herojs {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
-
-/* =========================
-   HERO IMAGE
-========================= */
 
 .hero-product-img {
     position: absolute;
@@ -142,11 +108,6 @@ section{
 
     z-index: 0;
 }
-
-
-/* =========================
-   DARK HERO OVERLAY
-========================= */
 
 #herojs::after {
     content: "";
@@ -163,11 +124,6 @@ section{
     z-index: 1;
 }
 
-
-/* =========================
-   HERO CONTENT
-========================= */
-
 .hero-content {
     position: relative;
     z-index: 2;
@@ -182,11 +138,6 @@ section{
     color: white;
 }
 
-
-/* =========================
-   HERO TEXT
-========================= */
-
 .hero-category {
     margin-bottom: 12px;
     font-size: 0.9rem;
@@ -195,25 +146,21 @@ section{
     color: #d0783f;
 }
 
-
 .hero-heading {
     max-width: 650px;
     font-size: clamp(3rem, 6vw, 5.5rem);
     line-height: 1.05;
 }
 
-
 .span-hero {
     color: #d0783f;
     font-family: cursive;
 }
 
-
 .hero-name {
     margin-top: 25px;
     font-size: clamp(1.8rem, 3vw, 3rem);
 }
-
 
 .hero-des {
     max-width: 550px;
@@ -222,22 +169,17 @@ section{
     color: rgba(255, 255, 255, 0.78);
 }
 
-
 .hero-rating {
     margin-top: 18px;
     font-family: 'DM Sans', sans-serif;
     color: #f5c06a;
 }
-/* =========================
-   HERO BUTTONS
-========================= */
 
 .hero-buttons {
     display: flex;
     gap: 15px;
     margin-top: 28px;
 }
-
 
 .hero-menu-button,
 .hero-book-button {
@@ -252,12 +194,10 @@ section{
         background-color 0.25s ease;
 }
 
-
 .hero-menu-button {
     background-color: #d0783f;
     color: white;
 }
-
 
 .hero-book-button {
     background-color: rgba(255, 255, 255, 0.12);
@@ -266,27 +206,20 @@ section{
     backdrop-filter: blur(8px);
 }
 
-
 .hero-menu-button:hover,
 .hero-book-button:hover {
     transform: translateY(-3px);
 }
 
-
 .hero-menu-button:hover {
     background-color: #b96532;
 }
-
 
 .hero-book-button:hover {
     background-color: rgba(255, 255, 255, 0.22);
 
 }
     /* mid div set to gris */
-
-/* =========================
-   ABOUT / MID SECTION
-========================= */
 
 .wrap {
     width: min(90%, 1200px);
@@ -301,10 +234,6 @@ section{
     align-items: center;
 }
 
-/* =========================
-   LEFT IMAGE
-========================= */
-
 .first-mid {
     position: relative;
 }
@@ -317,7 +246,6 @@ section{
 
     border-radius: 15px;
 }
-
 
 /* EXPERIENCE BADGE */
 
@@ -344,17 +272,11 @@ section{
     line-height: 1.2;
 }
 
-
-/* =========================
-   CENTER CONTENT
-========================= */
-
 .second-mid {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 
 #welcome-text-mid {
     margin: 0 0 12px;
@@ -368,7 +290,6 @@ section{
     letter-spacing: 1px;
 }
 
-
 #food-text-mid {
     margin: 0 0 20px;
 
@@ -377,7 +298,6 @@ section{
     line-height: 1.05;
 }
 
-
 .des-mid {
     max-width: 480px;
     margin: 0 0 20px;
@@ -385,7 +305,6 @@ section{
 
     line-height: 1.7;
 }
-
 
 .apito-signature {
     margin-bottom: 20px;
@@ -396,7 +315,6 @@ section{
 
     color: #25251d;
 }
-
 
 .explore-mid-button {
     padding: 12px 20px;
@@ -416,16 +334,10 @@ section{
         background-color 0.25s ease;
 }
 
-
 .explore-mid-button:hover {
     transform: translateY(-2px);
     background-color: #29480e;
 }
-
-
-/* =========================
-   RIGHT FEATURES
-========================= */
 
 .third-mid {
     display: flex;
@@ -434,14 +346,12 @@ section{
     gap: 32px;
 }
 
-
 .feature-mid {
     display: flex;
     align-items: center;
 
     gap: 18px;
 }
-
 
 .feature-icon {
     width: 58px;
@@ -460,14 +370,12 @@ section{
     font-size: 25px;
 }
 
-
 .feature-mid h4 {
     margin: 0 0 3px;
 
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
 }
-
 
 .feature-mid p {
     margin: 0;
@@ -481,7 +389,7 @@ section{
      transform: translateY(-3px);
     background-color:#f7f2ea;
     border-radius: 15px;
-  
+
 }
 
 /* the menu section */
@@ -514,7 +422,7 @@ section{
      transform: translateY(-3px);
     background-color:#f7f2ea;
     border-radius: 15px;
-  
+
 }
 #menu{
       overflow:hidden;
@@ -526,7 +434,6 @@ section{
     gap: 20px;
      transition: transform 0.5s ease;
 
-  
 }
 
 .menu-first{
@@ -550,7 +457,6 @@ section{
     flex-direction: column;
     align-items: center;
 
-
 }
 
 .menujs-text p ,.menujs-text h2{
@@ -571,10 +477,10 @@ section{
 
 .menu-buttons{
     display: flex;
-   
+
 }
 .menu-price{
-     color: #d0783f; 
+     color: #d0783f;
 }
 
 .menu-button{
@@ -597,9 +503,6 @@ section{
     transform: translateY(-2px);
     background-color: #b96532;
 }
-/* =========================
-   TOP RATED BENTO SECTION
-========================= */
 
 #top-rated-section {
     width: 100%;
@@ -608,22 +511,15 @@ section{
     background-color: #fffcf8;
 }
 
-
 .top-rated-container {
     width: min(90%, 1200px);
     margin: 0 auto;
 }
 
-
-/* =========================
-   SECTION HEADING
-========================= */
-
 .top-rated-heading {
     text-align: center;
     margin-bottom: 40px;
 }
-
 
 .top-rated-heading p {
     margin: 0 0 8px;
@@ -636,7 +532,6 @@ section{
     letter-spacing: 2px;
 }
 
-
 .top-rated-heading h2 {
     margin: 0;
 
@@ -647,11 +542,6 @@ section{
     color: #25251d;
 }
 
-
-/* =========================
-   BENTO GRID
-========================= */
-
 .bento-grid {
     display: grid;
 
@@ -660,11 +550,6 @@ section{
 
     gap: 20px;
 }
-
-
-/* =========================
-   BENTO CARD
-========================= */
 
 .bento-card {
     position: relative;
@@ -678,7 +563,6 @@ section{
     cursor: pointer;
 }
 
-
 .bento-card img {
     width: 100%;
     height: 100%;
@@ -689,11 +573,6 @@ section{
 
     transition: transform 0.5s ease;
 }
-
-
-/* =========================
-   DARK IMAGE OVERLAY
-========================= */
 
 .bento-card::after {
     content: "";
@@ -710,11 +589,6 @@ section{
     z-index: 1;
 }
 
-
-/* =========================
-   CARD CONTENT
-========================= */
-
 .bento-content {
     position: absolute;
 
@@ -727,7 +601,6 @@ section{
     color: white;
 }
 
-
 .bento-content h3 {
     margin: 0;
 
@@ -737,7 +610,6 @@ section{
 
     line-height: 1.1;
 }
-
 
 .bento-rating {
     margin-top: 8px;
@@ -749,15 +621,9 @@ section{
     color: #f5c06a;
 }
 
-
-/* =========================
-   HOVER
-========================= */
-
 .bento-card:hover img {
     transform: scale(1.06);
 }
-
 
 .bento-card:hover {
     transform: translateY(-3px);
@@ -765,19 +631,9 @@ section{
     transition: transform 0.3s ease;
 }
 
-
-/* =========================
-   FEATURED FIRST CARD
-========================= */
-
 .bento-card:first-child .bento-content h3 {
     font-size: 34px;
 }
-
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 800px) {
 
@@ -788,7 +644,6 @@ section{
 
 }
 
-
 @media (max-width: 600px) {
 
     .bento-grid {
@@ -797,9 +652,6 @@ section{
     }
 
 }
-/* =========================
-   FOOTER
-========================= */
 
 .site-footer {
     background-color: #f7f2ea;
@@ -807,11 +659,6 @@ section{
 
     border-top: 1px solid #e8ded0;
 }
-
-
-/* =========================
-   MAIN FOOTER
-========================= */
 
 .footer-main {
     width: min(90%, 1200px);
@@ -829,11 +676,6 @@ section{
 
     padding: 60px 0 45px;
 }
-
-
-/* =========================
-   BRAND
-========================= */
 
 .footer-brand {
     display: flex;
@@ -856,11 +698,6 @@ section{
     font-size: 13px;
     line-height: 1.7;
 }
-
-
-/* =========================
-   SOCIALS
-========================= */
 
 .footer-socials {
     display: flex;
@@ -899,11 +736,6 @@ section{
     transform: translateY(-2px);
 }
 
-
-/* =========================
-   FOOTER COLUMNS
-========================= */
-
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -922,7 +754,6 @@ section{
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 
 .footer-column a {
     width: fit-content;
@@ -944,11 +775,6 @@ section{
     transform: translateX(3px);
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
 .footer-contact p {
     margin: 0;
 
@@ -958,11 +784,6 @@ section{
     line-height: 1.6;
 }
 
-
-/* =========================
-   NEWSLETTER
-========================= */
-
 .newsletter > p {
     margin: 0 0 12px;
 
@@ -971,7 +792,6 @@ section{
     font-size: 13px;
     line-height: 1.6;
 }
-
 
 .newsletter-form {
     display: flex;
@@ -998,11 +818,9 @@ section{
     outline: none;
 }
 
-
 .newsletter-form input:focus {
     border-color: #d0783f;
 }
-
 
 .newsletter-form button {
     flex-shrink: 0;
@@ -1024,15 +842,9 @@ section{
     transition: background-color 0.25s ease;
 }
 
-
 .newsletter-form button:hover {
     background-color: #b96532;
 }
-
-
-/* =========================
-   BOTTOM BAR
-========================= */
 
 .footer-bottom {
     width: min(90%, 1200px);
@@ -1072,11 +884,6 @@ section{
     color: #d0783f;
 }
 
-
-/* =========================
-   RESPONSIVE
-========================= */
-
 @media (max-width: 1000px) {
 
     .footer-main {
@@ -1084,7 +891,6 @@ section{
     }
 
 }
-
 
 @media (max-width: 700px) {
 
@@ -1103,7 +909,6 @@ section{
     }
 
 }
-
 
 @media (max-width: 500px) {
 
@@ -1128,14 +933,9 @@ section{
     cursor: pointer;
 }
 
-
 @media (max-width: 1000px) {
 
-    /* =========================
-       NAVBAR
-    ========================= */
-
-    .navigation-bar {
+.navigation-bar {
         gap: 2rem;
     }
 
@@ -1143,12 +943,7 @@ section{
         width: 140px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero-content {
+.hero-content {
         width: 90%;
     }
 
@@ -1157,12 +952,7 @@ section{
         font-size: clamp(2.8rem, 6vw, 4.5rem);
     }
 
-
-    /* =========================
-       ABOUT SECTION
-    ========================= */
-
-    .wrap {
+.wrap {
         width: 90%;
         grid-template-columns:
             1fr 1fr;
@@ -1179,48 +969,22 @@ section{
         gap: 20px;
     }
 
-
-    /* =========================
-       MENU
-    ========================= */
-
-    .menujs {
+.menujs {
         flex: 0 0 280px;
     }
 
-
-    /* =========================
-       BENTO
-    ========================= */
-
-    .bento-grid {
+.bento-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-main {
+.footer-main {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-
-
-/* =========================================================
-   MOBILE NAVIGATION
-   <= 700px
-========================================================= */
-
 @media (max-width: 700px) {
 
-    /* =========================
-       NAVBAR
-    ========================= */
-
-    .nav-par {
+.nav-par {
         position: relative;
         justify-content: space-between;
         padding: 10px 20px;
@@ -1260,12 +1024,7 @@ section{
         margin: 8px 25px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
+.hero {
         padding-top: 0;
     }
 
@@ -1301,12 +1060,7 @@ section{
         flex-wrap: wrap;
     }
 
-
-    /* =========================
-       ABOUT SECTION
-    ========================= */
-
-    .wrap {
+.wrap {
         width: 88%;
 
         grid-template-columns: 1fr;
@@ -1316,8 +1070,7 @@ section{
         padding: 60px 0;
     }
 
-
-    .first-mid {
+.first-mid {
         width: 100%;
 
         display: flex;
@@ -1329,8 +1082,7 @@ section{
         max-width: 500px;
     }
 
-
-    .second-mid {
+.second-mid {
         width: 100%;
     }
 
@@ -1346,8 +1098,7 @@ section{
         max-width: 100%;
     }
 
-
-    /* FEATURES */
+/* FEATURES */
 
     .third-mid {
         grid-column: auto;
@@ -1363,12 +1114,7 @@ section{
         width: 100%;
     }
 
-
-    /* =========================
-       MENU
-    ========================= */
-
-    #menu {
+#menu {
         width: 92%;
     }
 
@@ -1384,12 +1130,7 @@ section{
         height: 230px;
     }
 
-
-    /* =========================
-       BENTO
-    ========================= */
-
-    #top-rated-section {
+#top-rated-section {
         padding: 60px 0;
     }
 
@@ -1408,41 +1149,20 @@ section{
         font-size: 28px;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-main {
+.footer-main {
         grid-template-columns: 1fr 1fr;
 
         gap: 35px;
     }
 }
 
-
-
-/* =========================================================
-   SMALL PHONES
-   <= 500px
-========================================================= */
-
 @media (max-width: 500px) {
 
-    /* =========================
-       NAV
-    ========================= */
-
-    .img-apito {
+.img-apito {
         width: 125px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero-div {
+.hero-div {
         height: 75vh;
         min-height: 560px;
     }
@@ -1480,18 +1200,12 @@ section{
         align-items: flex-start;
     }
 
-
-    .hero-menu-button,
+.hero-menu-button,
     .hero-book-button {
         width: 160px;
     }
 
-
-    /* =========================
-       ABOUT
-    ========================= */
-
-    .wrap {
+.wrap {
         width: 90%;
 
         padding: 50px 0;
@@ -1510,24 +1224,14 @@ section{
         font-size: 12px;
     }
 
-
-    /* =========================
-       FEATURES
-    ========================= */
-
-    .feature-icon {
+.feature-icon {
         width: 50px;
         height: 50px;
 
         font-size: 21px;
     }
 
-
-    /* =========================
-       MENU
-    ========================= */
-
-    .menujs {
+.menujs {
         flex: 0 0 82vw;
     }
 
@@ -1535,12 +1239,7 @@ section{
         height: 220px;
     }
 
-
-    /* =========================
-       BENTO
-    ========================= */
-
-    .bento-grid {
+.bento-grid {
         grid-template-rows:
             repeat(4, 240px);
 
@@ -1553,12 +1252,7 @@ section{
         bottom: 18px;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer-main {
+.footer-main {
         grid-template-columns: 1fr;
 
         padding: 45px 0;
