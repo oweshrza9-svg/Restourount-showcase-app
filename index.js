@@ -22,11 +22,8 @@ const getMoveAmount = () => {
 leftButton.addEventListener('click', () => {
 
     if (currentIndex > 0) {
-
         currentIndex -= 1
-
         const moveAmount = getMoveAmount()
-
         menuTrack.style.transform =
             `translateX(-${currentIndex * moveAmount}px)`
     }
@@ -36,9 +33,7 @@ leftButton.addEventListener('click', () => {
 rightButton.addEventListener('click', () => {
 
     if (currentIndex < heroDishes.length - 4) {
-
         currentIndex += 1
-
         const moveAmount = getMoveAmount()
         menuTrack.style.transform =
             `translateX(-${currentIndex * moveAmount}px)`
@@ -48,16 +43,12 @@ rightButton.addEventListener('click', () => {
 
            const mobileMenuButton =
            document.getElementById('mobile-menu-btn')
-
            const navigationBar =
            document.querySelector('.navigation-bar')
-       
-  
             mobileMenuButton.addEventListener('click', () => {
+             navigationBar.classList.toggle('active')
 
-           navigationBar.classList.toggle('active')
-
-})       
+             })       
 
 const  createHerodiv = (data) => {
 
@@ -91,16 +82,13 @@ const  createHerodiv = (data) => {
                 </h1>
 
                 <h2 class="hero-name">${name}</h2>
-
                 <p class="hero-des">${description}</p>
-
                 <h4 class="hero-rating">★ ${rating}</h4>
 
                 <div class="hero-buttons">
                     <button class="hero-menu-button">
                         Explore Menu
                     </button>
-
                     <button class="hero-book-button">
                         Book Table
                     </button>
@@ -162,13 +150,9 @@ const  createHerodiv = (data) => {
            const cartPopup = document.getElementById('cart-popup')
            const menuButtons = document.querySelectorAll('.menu-button')
 
-
            menuButtons.forEach(button => {
-
                button.addEventListener('click', () => {
-
                    cartPopup.classList.add('show')
-
                    setTimeout(() => {
                        cartPopup.classList.remove('show')
                    }, 2000)
@@ -197,7 +181,6 @@ const  createHerodiv = (data) => {
             <div class="bento-content">
 
                 <h3>${name}</h3>
-
                 <p class="bento-rating">
                     ★ ${rating}
                 </p>
