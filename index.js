@@ -41,10 +41,8 @@ rightButton.addEventListener('click', () => {
 })
 
 
-           const mobileMenuButton =
-           document.getElementById('mobile-menu-btn')
-           const navigationBar =
-           document.querySelector('.navigation-bar')
+           const mobileMenuButton = document.getElementById('mobile-menu-btn')
+           const navigationBar = document.querySelector('.navigation-bar')
             mobileMenuButton.addEventListener('click', () => {
              navigationBar.classList.toggle('active')
 
