@@ -131,3 +131,46 @@ const menuRender = (menu) =>{
 
 }
 menumain.innerHTML = heroDishes.map(menuRender).join('')
+
+const bentoGrid = document.getElementById('bento-grid')
+
+
+const bentoRender = (dish) => {
+
+    const {
+        name,
+        rating,
+        image
+    } = dish
+
+    return `
+        <article class="bento-card">
+
+            <img
+                src="${image}"
+                alt="${name}"
+            >
+
+            <div class="bento-content">
+
+                <h3>${name}</h3>
+
+                <p class="bento-rating">
+                    ★ ${rating}
+                </p>
+
+            </div>
+
+        </article>
+    `
+}
+
+
+const topRatedDishes = [...heroDishes]
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 4)
+
+
+bentoGrid.innerHTML = topRatedDishes
+    .map(bentoRender)
+    .join('')

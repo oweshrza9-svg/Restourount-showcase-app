@@ -46,7 +46,7 @@ export const heroDishes = [
         name: "Butter Chicken",
         category: "Indian",
         price: 529,
-        rating: 4.9,
+        rating: 4.2,
         description:
             "Tender chicken cooked in a creamy tomato and butter sauce with aromatic Indian spices.",
         image:
@@ -151,7 +151,7 @@ export const heroDishes = [
         name: "Mutton Biryani",
         category: "Main Course",
         price: 599,
-        rating: 4.9,
+        rating: 4.1,
         description: "Fragrant basmati rice layered with tender mutton and aromatic Indian spices.",
         image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=80",
         tags: ["indian", "mutton", "popular"],

@@ -597,3 +597,203 @@ section{
     transform: translateY(-2px);
     background-color: #b96532;
 }
+/* =========================
+   TOP RATED BENTO SECTION
+========================= */
+
+#top-rated-section {
+    width: 100%;
+    padding: 90px 0;
+
+    background-color: #fffcf8;
+}
+
+
+.top-rated-container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.top-rated-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.top-rated-heading p {
+    margin: 0 0 8px;
+
+    color: #d0783f;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.top-rated-heading h2 {
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+
+    color: #25251d;
+}
+
+
+/* =========================
+   BENTO GRID
+========================= */
+
+.bento-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 280px);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   BENTO CARD
+========================= */
+
+.bento-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background-color: #f7f2ea;
+
+    cursor: pointer;
+}
+
+
+.bento-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* =========================
+   DARK IMAGE OVERLAY
+========================= */
+
+.bento-card::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(20, 20, 15, 0.85),
+        rgba(20, 20, 15, 0.05) 65%
+    );
+
+    z-index: 1;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.bento-content {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 22px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+.bento-content h3 {
+    margin: 0;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 26px;
+
+    line-height: 1.1;
+}
+
+
+.bento-rating {
+    margin-top: 8px;
+
+    font-family: 'DM Sans', sans-serif;
+
+    font-size: 14px;
+
+    color: #f5c06a;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.bento-card:hover img {
+    transform: scale(1.06);
+}
+
+
+.bento-card:hover {
+    transform: translateY(-3px);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================
+   FEATURED FIRST CARD
+========================= */
+
+.bento-card:first-child .bento-content h3 {
+    font-size: 34px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 230px);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 260px);
+    }
+
+}
