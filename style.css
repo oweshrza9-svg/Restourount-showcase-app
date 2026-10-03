@@ -1273,3 +1273,129 @@ section{
         justify-content: center;
     }
 }
+
+
+
+.cart-popup {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: #25251d;
+    color: white;
+    border-radius: 10px;
+    transform: translateX(150%);
+    opacity: 0;
+
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.cart-popup.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cart-popup span {
+    color: #d0783f;
+    font-size: 20px;
+}
+
+.cart-popup p {
+    margin: 0;
+}
+
+
+
+.discount-offer {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 22px;
+    background: #d0783f;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+
+    transition: transform .25s ease;
+}
+
+.discount-offer:hover {
+    transform: translateY(-4px);
+}
+
+
+
+.discount-popup {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.8);
+    width: min(90%, 400px);
+    padding: 40px 30px;
+    background: #fffcf8;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.discount-popup.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.discount-small {
+ margin: 0 0 8px;
+    color: #d0783f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.discount-popup h2 {
+    margin: 0 0 15px;
+ font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #25251d;
+}
+
+.discount-popup p {
+    color: #6f6a61;
+    line-height: 1.6;
+}
+
+.discount-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+
+   color: #6f6a61;
+}
+
+.discount-claim {
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    background: #d0783f;
+    color: white;
+    cursor: pointer;
+}

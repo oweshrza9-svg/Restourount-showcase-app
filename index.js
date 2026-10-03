@@ -38,7 +38,7 @@ rightButton.addEventListener('click', () => {
     if (currentIndex < heroDishes.length - 4) {
 
         currentIndex += 1
-        
+
         const moveAmount = getMoveAmount()
         menuTrack.style.transform =
             `translateX(-${currentIndex * moveAmount}px)`
@@ -112,9 +112,9 @@ const  createHerodiv = (data) => {
     `
 }
 
-heroDiv.innerHTML = createHerodiv(heroDishes[7])
+           heroDiv.innerHTML = createHerodiv(heroDishes[7])
 
-const menuRender = (menu) =>{
+           const menuRender = (menu) =>{
    
        
     const {
@@ -157,12 +157,28 @@ const menuRender = (menu) =>{
     `
 
 }
-menumain.innerHTML = heroDishes.map(menuRender).join('')
+           menumain.innerHTML = heroDishes.map(menuRender).join('')
 
-const bentoGrid = document.getElementById('bento-grid')
+           const cartPopup = document.getElementById('cart-popup')
+           const menuButtons = document.querySelectorAll('.menu-button')
 
 
-const bentoRender = (dish) => {
+           menuButtons.forEach(button => {
+
+               button.addEventListener('click', () => {
+
+                   cartPopup.classList.add('show')
+
+                   setTimeout(() => {
+                       cartPopup.classList.remove('show')
+                   }, 2000)
+
+               })
+
+})           
+
+           const bentoGrid = document.getElementById('bento-grid')
+           const bentoRender = (dish) => {
 
     const {
         name,
@@ -193,11 +209,11 @@ const bentoRender = (dish) => {
 }
 
 
-const topRatedDishes = [...heroDishes]
-    .sort((a, b) => b.rating - a.rating)
-    .slice(0, 6)
+           const topRatedDishes = [...heroDishes]
+               .sort((a, b) => b.rating - a.rating)
+               .slice(0, 6)
+           
 
-
-bentoGrid.innerHTML = topRatedDishes
-    .map(bentoRender)
-    .join('')
+           bentoGrid.innerHTML = topRatedDishes
+               .map(bentoRender)
+               .join('')
