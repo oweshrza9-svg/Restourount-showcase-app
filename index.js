@@ -3,34 +3,61 @@ import { heroDishes } from './data.js'
 const heroDiv = document.getElementById('hero-div')
 const menumain = document.getElementById('menu-main')
 
-const moveAmount = 270 ;
+
 const menuTrack = document.getElementById('menu-main')
 let currentIndex = 0;
 const leftButton = document.getElementById('left-menuu');
 const rightButton = document.getElementById('right-menuu');
 
+const getMoveAmount = () => {
+
+    const card = document.querySelector('.menujs')
+    const cardWidth = card.offsetWidth
+    const styles = getComputedStyle(menuTrack)
+    const gap = parseFloat(styles.gap)
+    return cardWidth + gap
+}
+
 
 leftButton.addEventListener('click', () => {
 
     if (currentIndex > 0) {
-        currentIndex -= 1;
+
+        currentIndex -= 1
+
+        const moveAmount = getMoveAmount()
 
         menuTrack.style.transform =
-            `translateX(-${currentIndex * moveAmount}px)`;
+            `translateX(-${currentIndex * moveAmount}px)`
     }
-
 })
+
+
 rightButton.addEventListener('click', () => {
 
-    if (currentIndex < heroDishes.length - 1) {
-        currentIndex += 1;
+    if (currentIndex < heroDishes.length - 4) {
 
+        currentIndex += 1
+        
+        const moveAmount = getMoveAmount()
         menuTrack.style.transform =
-            `translateX(-${currentIndex * moveAmount}px)`;
+            `translateX(-${currentIndex * moveAmount}px)`
     }
-
 })
 
+
+           const mobileMenuButton =
+           document.getElementById('mobile-menu-btn')
+
+           const navigationBar =
+           document.querySelector('.navigation-bar')
+       
+  
+            mobileMenuButton.addEventListener('click', () => {
+
+           navigationBar.classList.toggle('active')
+
+})       
 
 const  createHerodiv = (data) => {
 
@@ -168,7 +195,7 @@ const bentoRender = (dish) => {
 
 const topRatedDishes = [...heroDishes]
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, 4)
+    .slice(0, 6)
 
 
 bentoGrid.innerHTML = topRatedDishes
