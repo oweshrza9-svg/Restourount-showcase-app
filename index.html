@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apito</title>
+    <meta name="description" content="Apito's Restaurant - A premium dining experience featuring global flavors, chef-crafted dishes, and a warm editorial atmosphere.">
+    <title>Apito's Restaurant | Premium Dining Experience</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,312 +18,382 @@
 
 <div id="container-main">
 
-    <section class="hero">
+    <!-- HERO & NAVBAR -->
+    <header class="hero" id="home">
         <!-- Navbar -->
-        <nav class="nav-par">
-            <ul class="navigation-bar">
-                <li class="logo"><img class="img-apito"  src="img/apito.png" alt="logo"></li>
-                <li class="home">Home</li>
-                <li class="menu">Menu</li>
-                <li class="featured">Featured</li>
-                <li class="about">About</li>
-                <li class="reservations">Reservations</li>
-                <li class="blog">Blog</li>
-                <li class="contect">Contact</li>
-                <li class="book">Book A Table</li>
+        <nav class="nav-par" aria-label="Main Navigation">
+            <ul class="navigation-bar" id="navigation-bar">
+                <li class="logo">
+                    <a href="#home" class="logo-link" aria-label="Apito Home">
+                        <img class="img-apito" src="img/apito.png" alt="Apito Restaurant Logo">
+                    </a>
+                </li>
+                <li class="home"><a href="#home">Home</a></li>
+                <li class="menu"><a href="#menu">Menu</a></li>
+                <li class="featured"><a href="#featured">Featured</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="reservations"><a href="#reservation" class="nav-reserve-link">Reservations</a></li>
+                <li class="blog"><a href="#about">Blog</a></li>
+                <li class="contect"><a href="#contact">Contact</a></li>
+                <li class="book">
+                    <button type="button" class="nav-book-btn" id="nav-book-btn">Book A Table</button>
+                </li>
             </ul>
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-    ☰
-</button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
         </nav>
 
-        <div class="hero-div" id = "hero-div">
-             <!-- the hero section redered here -->
+        <div class="hero-div" id="hero-div" aria-live="polite">
+             <!-- The rotating hero section is rendered and transitioned here -->
+        </div>
+    </header>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="wrap">
+
+            <!-- LEFT: IMAGE -->
+            <div class="first-mid">
+                <img
+                    src="img/hero-mid-img.jpg"
+                    alt="Apito restaurant cozy dining room ambience"
+                    class="img-first"
+                >
+
+                <h4 id="first-mid-text">
+                    10+<br>
+                    Years of<br>
+                    Experience
+                </h4>
+            </div>
+
+
+            <!-- CENTER: CONTENT -->
+            <div class="second-mid">
+                <h5 id="welcome-text-mid">
+                    Welcome To Apito's Restaurant
+                </h5>
+
+                <h2 id="food-text-mid">
+                    Good Food,<br>
+                    Good <span class="span-hero">Life</span>
+                </h2>
+
+                <p class="des-mid">
+                    At Apito, we believe that great food brings people together.
+                    Our menu is inspired by global flavors and crafted with
+                    the freshest ingredients.
+                </p>
+
+                <div class="apito-signature">
+                    Apito ♡
+                </div>
+
+                <a href="#menu" class="explore-mid-button" id="explore-mid-btn">
+                    Learn More About Us →
+                </a>
+            </div>
+
+
+            <!-- RIGHT: FEATURES -->
+            <div class="third-mid">
+                <div class="feature-mid">
+                    <div class="feature-icon" aria-hidden="true">🌿</div>
+                    <div>
+                        <h4>Quality</h4>
+                        <p>Ingredients</p>
+                    </div>
+                </div>
+
+                <div class="feature-mid">
+                    <div class="feature-icon" aria-hidden="true">👨‍🍳</div>
+                    <div>
+                        <h4>Skilled</h4>
+                        <p>Chefs</p>
+                    </div>
+                </div>
+
+                <div class="feature-mid">
+                    <div class="feature-icon" aria-hidden="true">🏡</div>
+                    <div>
+                        <h4>Cozy</h4>
+                        <p>Ambience</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
 
-     <div class="wrap">
+    <!-- ROYAL MENU SECTION -->
+    <section id="menu" class="menu-section">
+        <h2 class="menu-heading">✦✦✦════ ⚜️ Royal Menu ⚜️ ════✦✦✦</h2>
+        <p class="menu-dess">Chef's Choice</p>
 
-    <!-- LEFT: IMAGE -->
-    <div class="first-mid">
-
-        <img
-            src="img/hero-mid-img.jpg"
-            alt="Restaurant interior"
-            class="img-first"
-        >
-
-        <h4 id="first-mid-text">
-            10+<br>
-            Years of<br>
-            Experience
-        </h4>
-
-    </div>
-
-
-    <!-- CENTER: CONTENT -->
-    <div class="second-mid">
-
-        <h5 id="welcome-text-mid">
-            Welcome To Apito's Restaurant
-        </h5>
-
-        <h2 id="food-text-mid">
-            Good Food,<br>
-            Good  <span class="span-hero">Life</span>
-        </h2>
-
-        <p class="des-mid">
-            At Apito, we believe that great food brings people together.
-            Our menu is inspired by global flavors and crafted with
-            the freshest ingredients.
-        </p>
-
-        <div class="apito-signature">
-            Apito ♡
+        <!-- Carousel navigation controls -->
+        <div class="menu-carousel-controls">
+            <button id="left-menuu" class="menu-nav-btn" aria-label="Previous dishes" title="Previous dishes" disabled>
+                ←
+            </button>
+            <span class="carousel-dot-counter" id="carousel-indicator">Slide to explore our collection</span>
+            <button id="right-menuu" class="menu-nav-btn" aria-label="Next dishes" title="Next dishes">
+                →
+            </button>
         </div>
 
-        <button class="explore-mid-button">
-            Learn More About Us →
-        </button>
+        <div class="menu-container-viewport" id="menu-container-viewport">
+            <div class="menu-main" id="menu-main">
+                <!-- All dishes rendered dynamically -->
+            </div>
+        </div>
+    </section>
 
-    </div>
+
+    <!-- TOP RATED / BENTO SECTION -->
+    <section id="featured" class="top-rated-section">
+        <div class="top-rated-container" id="top-rated-section">
+
+            <div class="top-rated-heading">
+                <p>TOP RATED DISHES</p>
+                <h2>Our Chef's Favorites</h2>
+            </div>
+
+            <div class="bento-grid" id="bento-grid">
+                <!-- Top rated dishes will be rendered here -->
+            </div>
+
+        </div>
+    </section>
 
 
-    <!-- RIGHT: FEATURES -->
-    <div class="third-mid">
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-main">
 
-        <div class="feature-mid">
-            <div class="feature-icon">🌿</div>
+            <!-- BRAND -->
+            <div class="footer-brand">
+                <a href="#home">
+                    <img
+                        src="img/apito.png"
+                        alt="Apito Restaurant"
+                        class="footer-logo"
+                    >
+                </a>
+
+                <p>
+                    Good food, good mood! Visit us and
+                    enjoy an unforgettable dining
+                    experience.
+                </p>
+
+                <div class="footer-socials" aria-label="Social links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">𝕏</a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#about">About Us</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservation" class="footer-reserve-link">Reservation</a>
+                <a href="#featured">Featured</a>
+                <a href="#about">Our Story</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+
+            <!-- MENU -->
+            <div class="footer-column">
+                <h3>Our Menu</h3>
+                <a href="#menu">Breakfast</a>
+                <a href="#menu">Lunch</a>
+                <a href="#menu">Dinner</a>
+                <a href="#menu">Desserts</a>
+                <a href="#menu">Drinks</a>
+                <a href="#menu">Chef's Special</a>
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-column footer-contact">
+                <h3>Contact Info</h3>
+                <p>
+                    📍 123 Food Street,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Flavor Town, FT 56789
+                </p>
+                <p>
+                    ☎ +1 234 567 8900
+                </p>
+                <p>
+                    ✉ info@apito.com
+                </p>
+            </div>
+
+
+            <!-- NEWSLETTER -->
+            <div class="footer-column newsletter">
+                <h3>Newsletter</h3>
+                <p>
+                    Subscribe to get the latest updates
+                    and offers.
+                </p>
+
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Enter your email"
+                        required
+                        aria-label="Email for newsletter"
+                    >
+                    <button type="submit" id="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="newsletter-feedback" id="newsletter-feedback" style="display: none;"></p>
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 Apito Restaurant. All Rights Reserved.
+            </p>
 
             <div>
-                <h4>Quality</h4>
-                <p>Ingredients</p>
+                <a href="#home">Privacy Policy</a>
+                <span>|</span>
+                <a href="#home">Terms & Conditions</a>
             </div>
         </div>
+    </footer>
 
 
-        <div class="feature-mid">
-            <div class="feature-icon">👨‍🍳</div>
-
-            <div>
-                <h4>Skilled</h4>
-                <p>Chefs</p>
-            </div>
-        </div>
-
-
-        <div class="feature-mid">
-            <div class="feature-icon">🏡</div>
-
-            <div>
-                <h4>Cozy</h4>
-                <p>Ambience</p>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-     </section>
-
-     <section id="menu-first">
-              <h2 class="menu-heading">✦✦✦════ ⚜️ Royal Menu ⚜️ ════✦✦✦
-                                  </h2>
-                <p class="menu-dess">Chief's Choice</p>
-
-                <button id="left-menuu" align="left"><--</button>
-                <button id="right-menuu" align="right">--></button>
-
-                <div id="menu">
-                     <div class="menu-main" id="menu-main">
-                         <!-- all the menu will be here -->
-                     </div>
-           </div>
-          
-     </section>
-
-
-<section id="top-rated-section">
-
-    <div class="top-rated-container">
-
-        <div class="top-rated-heading">
-            <p>TOP RATED DISHES</p>
-            <h2>Our Chef's Favorites</h2>
-        </div>
-
-
-        <div class="bento-grid" id="bento-grid">
-            <!-- Top rated dishes will be rendered here -->
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="site-footer">
-
-    <div class="footer-main">
-
-        <!-- BRAND -->
-        <div class="footer-brand">
-
-            <img
-                src="img/apito.png"
-                alt="Apito Restaurant"
-                class="footer-logo"
-            >
-
-            <p>
-                Good food, good mood! Visit us and
-                enjoy an unforgettable dining
-                experience.
-            </p>
-
-            <div class="footer-socials">
-                <a href="#">f</a>
-                <a href="#">◎</a>
-                <a href="#">𝕏</a>
-                <a href="#">▶</a>
-            </div>
-
-        </div>
-
-
-        <!-- QUICK LINKS -->
-        <div class="footer-column">
-
-            <h3>Quick Links</h3>
-
-            <a href="#">About Us</a>
-            <a href="#">Menu</a>
-            <a href="#">Reservation</a>
-            <a href="#">Gallery</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact Us</a>
-
-        </div>
-
-
-        <!-- MENU -->
-        <div class="footer-column">
-
-            <h3>Our Menu</h3>
-
-            <a href="#">Breakfast</a>
-            <a href="#">Lunch</a>
-            <a href="#">Dinner</a>
-            <a href="#">Desserts</a>
-            <a href="#">Drinks</a>
-            <a href="#">Chef's Special</a>
-
-        </div>
-
-
-        <!-- CONTACT -->
-        <div class="footer-column footer-contact">
-
-            <h3>Contact Info</h3>
-
-            <p>
-                📍 123 Food Street,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Flavor Town, FT 56789
-            </p>
-
-            <p>
-                ☎ +1 234 567 8900
-            </p>
-
-            <p>
-                ✉ info@apito.com
-            </p>
-
-        </div>
-
-
-        <!-- NEWSLETTER -->
-        <div class="footer-column newsletter">
-
-            <h3>Newsletter</h3>
-
-            <p>
-                Subscribe to get the latest updates
-                and offers.
-            </p>
-
-            <form class="newsletter-form">
-
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                >
-
-                <button type="submit">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </div>
-
+    <!-- TOAST NOTIFICATION -->
+    <div class="cart-popup" id="cart-popup" role="status" aria-live="polite">
+        <span class="cart-popup-icon" aria-hidden="true">✓</span>
+        <p id="cart-popup-text">Dish added to your order!</p>
     </div>
 
 
-    <!-- BOTTOM BAR -->
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Apito Restaurant. All Rights Reserved.
-        </p>
-
-        <div>
-            <a href="#">Privacy Policy</a>
-            <span>|</span>
-            <a href="#">Terms & Conditions</a>
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- Add to cart popup -->
-<div class="cart-popup" id="cart-popup">
-    <span>✓</span>
-    <p>Dish added to your order!</p>
-</div>
-
-<!-- Fixed discount button -->
-<button class="discount-offer" id="discount-offer">
-    🎁 Get 20% OFF
-</button>
-
-<!-- Discount popup -->
-<div class="discount-popup" id="discount-popup">
-    <button class="discount-close" id="discount-close">×</button>
-
-    <p class="discount-small">SPECIAL OFFER</p>
-    <h2>Get 20% OFF</h2>
-    <p>
-        Enjoy 20% off your first order at Apito's Restaurant.
-    </p>
-
-    <button class="discount-claim" id="discount-claim">
-        Claim Offer
+    <!-- FLOATING DISCOUNT BUTTON -->
+    <button class="discount-offer" id="discount-offer" aria-label="Open 20% discount offer">
+        🎁 Get 20% OFF
     </button>
-</div>
+
+    <!-- DISCOUNT POPUP & BACKDROP -->
+    <div class="discount-backdrop" id="discount-backdrop"></div>
+    <div class="discount-popup" id="discount-popup" role="dialog" aria-modal="true" aria-labelledby="discount-title">
+        <button class="discount-close" id="discount-close" aria-label="Close discount popup">×</button>
+
+        <p class="discount-small">SPECIAL OFFER</p>
+        <h2 id="discount-title">Get 20% OFF</h2>
+        <p id="discount-desc">
+            Enjoy 20% off your first order at Apito's Restaurant.
+        </p>
+
+        <button class="discount-claim" id="discount-claim" type="button">
+            Claim Offer
+        </button>
+    </div>
 
 
+    <!-- RESERVATION MODAL & BACKDROP -->
+    <div class="reservation-modal-backdrop" id="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="reservation-title">
+        <div class="reservation-modal-box">
+            <button class="reservation-modal-close" id="reservation-modal-close" aria-label="Close reservation modal">×</button>
+            
+            <!-- Reservation Form -->
+            <div id="reservation-form-container">
+                <span class="reservation-badge">TABLE BOOKING</span>
+                <h2 class="reservation-title" id="reservation-title">Book A Table</h2>
+                <p class="reservation-subtitle">Join us for an unforgettable dining experience at Apito's.</p>
+
+                <form id="reservation-form" class="reservation-form" novalidate>
+                    <div class="res-form-group">
+                        <label for="res-name">Full Name</label>
+                        <input
+                            type="text"
+                            id="res-name"
+                            name="name"
+                            placeholder="e.g. Elena Rossi"
+                            required
+                            autocomplete="name"
+                        >
+                        <span class="res-error-msg" id="res-name-error"></span>
+                    </div>
+
+                    <div class="res-form-row">
+                        <div class="res-form-group">
+                            <label for="res-date">Date</label>
+                            <input
+                                type="date"
+                                id="res-date"
+                                name="date"
+                                required
+                            >
+                            <span class="res-error-msg" id="res-date-error"></span>
+                        </div>
+
+                        <div class="res-form-group">
+                            <label for="res-time">Time</label>
+                            <input
+                                type="time"
+                                id="res-time"
+                                name="time"
+                                required
+                            >
+                            <span class="res-error-msg" id="res-time-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="res-form-group">
+                        <label for="res-guests">Number of Guests</label>
+                        <select id="res-guests" name="guests" required>
+                            <option value="" disabled selected>Select number of guests</option>
+                            <option value="1 Guest">1 Guest</option>
+                            <option value="2 Guests">2 Guests (Couple)</option>
+                            <option value="3 Guests">3 Guests</option>
+                            <option value="4 Guests">4 Guests</option>
+                            <option value="5-6 Guests">5-6 Guests</option>
+                            <option value="7+ Guests">7+ Guests (Private Dining)</option>
+                        </select>
+                        <span class="res-error-msg" id="res-guests-error"></span>
+                    </div>
+
+                    <button type="submit" class="reservation-submit-btn" id="reservation-submit-btn">
+                        Reserve Table
+                    </button>
+                </form>
+            </div>
+
+            <!-- Success State -->
+            <div id="reservation-success-state" class="reservation-success-state" style="display: none;">
+                <div class="reservation-success-icon" aria-hidden="true">✓</div>
+                <h3 class="reservation-success-heading">Reservation request received</h3>
+                <p class="reservation-success-body" id="reservation-success-body">
+                    Thank you! We look forward to seeing you at Apito's.
+                </p>
+                <div class="reservation-summary" id="reservation-summary"></div>
+                <button type="button" class="reservation-done-btn" id="reservation-done-btn">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 <script type="module" src="index.js"></script>
 
 </body>
